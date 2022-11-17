@@ -1,0 +1,32 @@
+/*Homework 8: Special multiples 2
+● Read an integer N (1 <= 30): Print the first N numbers that are
+○ multiple of 3 but not multiple of 4
+● Input: 11
+● Output: 3 6 9 15 18 21 27 30 33 39 42
+● Notice
+○ 12 is divisible by both 3 and 4 ⇒ so excluded*/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i =0,m=0;
+    cin >> n;
+    while(i<n)
+    {
+
+        if (m%3==0&&m%4!=0)
+        {
+                cout <<m<<" ";
+
+ i++;
+        }
+        m++;
+
+    }
+
+        return 0;
+    }
